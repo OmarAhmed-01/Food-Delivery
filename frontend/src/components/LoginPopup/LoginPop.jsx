@@ -4,12 +4,18 @@ import { assets } from '../../assets/assets'
 
 const LoginPop = ({ setShowLogin }) => {
     const [currentState, setCurrentState] = useState("Sign Up")
+    const [fadingOut, setFadingOut] = useState(false);
+
+    const handleClose = () => {
+        setFadingOut(true);
+        setTimeout(() => setShowLogin(false),500);
+    };
   return (
     <div className=' login-popup'>
-        <form className=' login-popup-container'>
+        <form className={`login-popup-container ${fadingOut ? 'login-popup-container-out' : ''}`}>
             <div className="login-popup-title">
                 <h2>{currentState}</h2>
-                <img src={assets.cross_icon} alt='' onClick={() => setShowLogin(false)}/>
+                <img src={assets.cross_icon} alt='' onClick={() => handleClose()} />
             </div>
             <div className="login-popup-inputs">
                 {currentState === "Login" ? <></> : <input type='text' placeholder='Name' required/>}

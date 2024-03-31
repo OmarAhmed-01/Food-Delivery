@@ -1,7 +1,9 @@
 import basket_icon from './basket_icon.png'
+import basket_icon_2 from './basket_icon_2.png'
 import logo from './logo.png'
 import header_img from './header_img.png'
 import search_icon from './search_icon.png'
+import search_icon_2 from './search2.png'
 import menu_1 from './menu_1.png'
 import menu_2 from './menu_2.png'
 import menu_3 from './menu_3.png'
@@ -10,6 +12,7 @@ import menu_5 from './menu_5.png'
 import menu_6 from './menu_6.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
+import cart from './cart.png'
 
 import food_1 from './food_1.png'
 import food_2 from './food_2.png'
@@ -51,6 +54,7 @@ import app_store from './app_store.png'
 import play_store from './play_store.png'
 import linkedin_icon from './linkedin_icon.png'
 import facebook_icon from './facebook_icon.png'
+import instagram_icon from './instagram_icon.png'
 import twitter_icon from './twitter_icon.png'
 import cross_icon from './cross_icon.png'
 import selector_icon from './selector_icon.png'
@@ -63,8 +67,10 @@ import parcel_icon from './parcel_icon.png'
 export const assets = {
     logo,
     basket_icon,
+    basket_icon_2,
     header_img,
     search_icon,
+    search_icon_2,
     rating_starts,
     add_icon_green,
     add_icon_white,
@@ -73,13 +79,15 @@ export const assets = {
     play_store,
     linkedin_icon,
     facebook_icon,
+    instagram_icon,
     twitter_icon,
     cross_icon,
     selector_icon,
     profile_icon,
     logout_icon,
     bag_icon,
-    parcel_icon
+    parcel_icon,
+    cart
 }
 
 export const menu_list = [

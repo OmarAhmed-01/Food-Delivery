@@ -11,8 +11,8 @@ const Footer = () => {
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                 <div className=' footer-social-icons'>
                     <img src={assets.facebook_icon} alt="" />
-                    <img src={assets.twitter_icon} alt="" />
-                    <img src={assets.linkedin_icon} alt="" />
+                    {/* <img src={assets.twitter_icon} alt="" /> */}
+                    <img src={assets.instagram_icon} alt="" />
                 </div>
             </div>
             <div className=' footer-content-centre'>

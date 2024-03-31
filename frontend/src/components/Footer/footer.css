@@ -26,12 +26,16 @@
     margin-bottom: 10px;
     cursor: pointer;
 }
+.footer-content-left li:hover, .footer-content-centre li:hover, .footer-content-right li:hover{
+    color: #00CCBC;
+}
 .footer-content-centre h2, .footer-content-right h2{
     color: white;
 }
 .footer-social-icons img{
     width: 40px;
     margin-right: 15px;
+    background: transparent;
 }
 .footer hr{
     width: 100%;
