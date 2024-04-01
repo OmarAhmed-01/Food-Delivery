@@ -87,9 +87,18 @@
     width: max(10vw,150px);
     padding: 12px 5px;
     background-color: white;
-    border: none;
-    color: #00ccbc;
+    border: 1px solid #00ccbc;
+    color: #000000;
     border-radius: 0px 4px 4px 0px; 
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.cart-promocode-input button:hover{
+    background-color: #00ccbc;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.3s;
 }
 @media (max-width:750px) {
     .cart-bottom{

@@ -8,6 +8,12 @@ export const Navbar = ({ setShowLogin }) => {
 
   const [menu, setMenu] = useState("Home");
   const {cartTotalAmount} = useContext(StoreContext)
+  const [isSearching, setIsSearcing] = useState(false);
+  const [isExiting, setIsExiting] = useState(false);
+
+  const handleSearch = () => {
+    setIsSearcing(!isSearching);
+  }
 
   return (
     <div className=' navbar'>
@@ -19,7 +25,15 @@ export const Navbar = ({ setShowLogin }) => {
         <a href='/#footer' onClick={() => setMenu("Contact-us")} className={menu==='Contact-us' ? "active":""}>Contact Us</a>
       </ul>
       <div className=' navbar-right'>
-        <img src={assets.search_icon} alt=''/>
+        <form className=' search-bar'>
+          {
+            isSearching === true ? <input type='text' placeholder='search for item'/> : <></>
+          }
+        </form>
+        {/* <form className={isSearching === true ? "search-bar" : ""}>
+          <input type='text' placeholder='search for item'/>
+        </form> */}
+        <img src={assets.search_icon} alt='' onClick={() => handleSearch()}/>
         <div className=' navbar-search-icon'>
           <Link to='/cart'><img src={assets.cart} classname='cart' alt=''/></Link>
           <div className={cartTotalAmount() === 0 ? "" : "dot"}></div>
