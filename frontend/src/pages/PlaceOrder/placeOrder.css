@@ -13,6 +13,7 @@
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 50px;
+    color: white;
 }
 .place-order-left input{
     margin-bottom: 15px;
@@ -33,3 +34,7 @@
 .place-order-right .cart-total button{
     margin-top: 30px;
 }
+.cart-total h2{
+    color: white;
+}
+

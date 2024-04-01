@@ -29,6 +29,8 @@ const StoreContextProvider = (props) => {
     return totalAmount;
   };
 
+  const [searchItem, setSearchItem] = useState("");
+
   const contextValue = {
     food_list,
     cartItem,
@@ -36,6 +38,8 @@ const StoreContextProvider = (props) => {
     addToCart,
     removeFromCart,
     cartTotalAmount,
+    searchItem,
+    setSearchItem,
   };
   return (
     <StoreContext.Provider value={contextValue}>
