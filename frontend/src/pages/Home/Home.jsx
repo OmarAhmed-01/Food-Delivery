@@ -9,10 +9,6 @@ import { Router, useParams } from 'react-router-dom'
 const Home = () => {
 
   const [category, setCategory] = useState("All");
-  // const homeRef = useRef();
-  // const menuRef = useRef();
-  // const mobileRef = useRef();
-  // const contactRef = useRef();
 
   return (
     <div>

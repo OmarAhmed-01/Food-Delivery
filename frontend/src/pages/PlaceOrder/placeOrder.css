@@ -12,8 +12,16 @@
 .place-order-left .title{
     font-size: 30px;
     font-weight: 600;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     color: white;
+}
+.place-order-left hr{
+    margin-bottom: 25px;
+    width: 100%;
+    height: 3px;
+    border: none;
+    background-color: #00CCBC;
+    border-radius: 3px;
 }
 .place-order-left input{
     margin-bottom: 15px;
@@ -36,5 +44,12 @@
 }
 .cart-total h2{
     color: white;
+}
+.place-order-right hr{
+    width: 100%;
+    height: 3px;
+    border: none;
+    background-color: #00CCBC;
+    border-radius: 3px;
 }
 

@@ -21,6 +21,9 @@
     align-items: start;
     gap: 20px;
 }
+.footer-content-left img{
+    width: 300px;
+}
 .footer-content-left li, .footer-content-centre li, .footer-content-right li{
     list-style-type: none;
     margin-bottom: 10px;
