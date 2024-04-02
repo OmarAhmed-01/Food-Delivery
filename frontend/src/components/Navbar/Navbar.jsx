@@ -30,62 +30,64 @@ export const Navbar = ({ setShowLogin }) => {
   };
 
   return (
-    <div className=" navbar">
-      <Link to="/">
-        <img src={assets.logo} alt="" className=" logo" />
-      </Link>
-      <ul className="navbar-menu">
-        <Link
-          to="/"
-          onClick={() => setMenu("Home")}
-          className={menu === "Home" ? "active" : ""}
-        >
-          Home
+    <>
+      <div className=" navbar">
+        <Link to="/">
+          <img src={assets.logo} alt="" className=" logo" />
         </Link>
-        <a
-          href="/#explore-menu"
-          onClick={() => setMenu("Menu")}
-          className={menu === "Menu" ? "active" : ""}
-        >
-          Menu
-        </a>
-        <a
-          href="/#app-download"
-          onClick={() => setMenu("Mobile-app")}
-          className={menu === "Mobile-app" ? "active" : ""}
-        >
-          Mobile App
-        </a>
-        <a
-          href="/#footer"
-          onClick={() => setMenu("Contact-us")}
-          className={menu === "Contact-us" ? "active" : ""}
-        >
-          Contact Us
-        </a>
-      </ul>
-      <div className=" navbar-right">
-        <form className=" search-bar" onChange={handleFormSubmit}>
-          {isSearching === true ? (
-            <input
-              type="text"
-              placeholder="Search..."
-              value={search}
-              onChange={handleInputChange}
-            />
-          ) : (
-            <></>
-          )}
-        </form>
-        <img src={assets.search_icon} alt="" onClick={() => handleSearch()} />
-        <div className=" navbar-search-icon">
-          <Link to="/cart">
-            <img src={assets.cart} classname="cart" alt="" />
+        <ul className="navbar-menu">
+          <Link
+            to="/"
+            onClick={() => setMenu("Home")}
+            className={menu === "Home" ? "active" : ""}
+          >
+            Home
           </Link>
-          <div className={cartTotalAmount() === 0 ? "" : "dot"}></div>
+          <a
+            href="/#explore-menu"
+            onClick={() => setMenu("Menu")}
+            className={menu === "Menu" ? "active" : ""}
+          >
+            Menu
+          </a>
+          <a
+            href="/#app-download"
+            onClick={() => setMenu("Mobile-app")}
+            className={menu === "Mobile-app" ? "active" : ""}
+          >
+            Mobile App
+          </a>
+          <a
+            href="/#footer"
+            onClick={() => setMenu("Contact-us")}
+            className={menu === "Contact-us" ? "active" : ""}
+          >
+            Contact Us
+          </a>
+        </ul>
+        <div className='navbar-right'>
+          <form className=" search-bar" onChange={handleFormSubmit}>
+            {isSearching === true ? (
+              <input
+                type="text"
+                placeholder="Search..."
+                value={search}
+                onChange={handleInputChange}
+              />
+            ) : (
+              <></>
+            )}
+          </form>
+          <img src={assets.search_icon} alt="" className='search-btn' onClick={() => handleSearch()} />
+          <div className=" navbar-search-icon">
+            <Link to="/cart">
+              <img src={assets.cart} alt="" />
+            </Link>
+            <div className={cartTotalAmount() === 0 ? "" : "dot"}></div>
+          </div>
+          <button onClick={() => setShowLogin(true)}>Sign in</button>
         </div>
-        <button onClick={() => setShowLogin(true)}>Sign in</button>
       </div>
-    </div>
+    </>
   );
 };
