@@ -52,4 +52,10 @@
     background-color: #00CCBC;
     border-radius: 3px;
 }
+@media (max-width: 768px){
+    .place-order{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
