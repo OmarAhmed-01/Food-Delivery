@@ -5,7 +5,9 @@ import './orders.css'
 import { assets } from '../../assets/assets'
 
 const Orders = ({ url }) => {
+  
   const [orders, setOrders] = useState([]);
+
   const fetchAllOrder = async () => {
     const response = await axios.get(url + '/api/order/list');
     if (response.data.success) {
@@ -14,6 +16,16 @@ const Orders = ({ url }) => {
     }
     else {
       toast.error("Error")
+    }
+  }
+  const statusHandler = async (event, orderId) => {
+    console.log(event, orderId);
+    const respone = await axios.post(url + "/api/order/status", {
+      orderId,
+      status: event.target.value
+    })
+    if(respone.data.success) {
+      await fetchAllOrder();
     }
   }
   
@@ -48,7 +60,7 @@ const Orders = ({ url }) => {
             </div>
             <p>Items: {order.items.length}</p>
             <p>${order.amount}</p>
-            <select name="" id="">
+            <select name="" id="" value={order.status} onChange={(event) => statusHandler(event, order._id)}>
               <option value="Food Processing">Food Processing</option>
               <option value="Out for Delivery">Out for Delivery</option>
               <option value="Arrived">Arrived</option>
