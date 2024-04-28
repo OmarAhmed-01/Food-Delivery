@@ -15,7 +15,7 @@
     font-size: 14px;
     padding: 10px 20px;
     color: white;
-    border: 1px solid cyan;
+    border-bottom: 1px solid cyan;
 }
 .my-orders-order img{
     width: 50px;
@@ -27,12 +27,18 @@
     font-weight: 500;
 }
 .my-orders-order button{
-    border: 3px solid cyan;
     padding: 12px 0px;
+    outline: none;
+    border: none;
     border-radius: 4px;
     background-color: white;
     color: black;
     cursor: pointer;
+    transition: all 0.3s;
+}
+.my-orders-order button:hover{
+    background-color: cyan;
+    transition: all 0.3s;
 }
 
 @media (max-width: 900px) {

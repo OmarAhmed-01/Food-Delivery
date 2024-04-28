@@ -15,6 +15,10 @@ import menu_6 from './menu_6.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
 import cart from './cart.png'
+import profile from './profile.png'
+import logout from './logout.png'
+import basket from './basket.png'
+import store from './store.png'
 
 import food_1 from './food_1.png'
 import food_2 from './food_2.png'
@@ -91,7 +95,11 @@ export const assets = {
     logout_icon,
     bag_icon,
     parcel_icon,
-    cart
+    cart,
+    profile,
+    logout,
+    basket,
+    store
 }
 
 export const menu_list = [

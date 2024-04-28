@@ -3,7 +3,7 @@
     grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
     align-items: start;
     gap: 30px;
-    border: 1px solid tomato;
+    border-bottom: 1px solid darkblue;
     padding: 20px;
     margin: 30px 0px;
     font-size: 14px;
@@ -20,11 +20,14 @@
     margin-bottom: 10px;
 }
 .order-item select{
-    background-color: #ffe8e4;
-    border: 1px solid tomato;
+    background-color: #dadada;
+    border: 2px solid darkblue;
     width: max(10vw, 120px);
     padding: 10px;
     outline: none;
+}
+.order-item img{
+    width: 50px;
 }
 @media (max-width: 1000px) {
     .order-item{
