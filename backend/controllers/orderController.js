@@ -1,15 +1,13 @@
 import orderModel from '../models/orderModel.js'
 import userModel from '../models/userModels.js'
 import Stripe from 'stripe';
-import React, { useContext } from 'react';
-import StoreContext from '../../frontend/src/context/StoreContext.jsx'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 //placing order from frontend
 const placeOrder = async (req, res) => {
 
-    const { url } = useContext(StoreContext);
+   const url = 'https://food-delivery-backend-ehzw.onrender.com';
 
     try {
         const newOrder = new orderModel({
