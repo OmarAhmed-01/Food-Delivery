@@ -103,7 +103,7 @@ export const Navbar = ({ setShowLogin }) => {
               </ul>
             </div>
           } 
-        </div>
+        </div> 
       </div>
     </>
   );

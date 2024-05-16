@@ -3,6 +3,7 @@ import basket_icon_2 from './basket_icon_2.png'
 import header_img from './header_img.png'
 import hamburger from './hamburger.png'
 import close from './close.png'
+import burger from './burger-menu.png'
 import logo from './logo.png'
 import search_icon from './search_icon.png'
 import search_icon_2 from './search2.png'
@@ -99,7 +100,8 @@ export const assets = {
     profile,
     logout,
     basket,
-    store
+    store,
+    burger
 }
 
 export const menu_list = [

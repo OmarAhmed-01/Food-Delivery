@@ -1,0 +1,73 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# Operating System Files
+.DS_Store
+Thumbs.db
+.vscode/
+Desktop.ini
+
+# IDE/Editor Files
+.idea/
+.vs/
+.suo
+.classpath
+.project
+.settings/
+*.iml
+*.ipr
+
+# Dependency Directories
+node_modules/
+vendor/
+packages/
+lib/
+
+# Build/Output Files
+*.log
+*.jar
+*.war
+*.ear
+target/
+bin/
+obj/
+
+# Temporary Files
+*.tmp
+*.bak
+
+# Configuration Files
+.env
+*.config
+
+# Compiled Files
+*.exe
+*.dll
+*.so
+*.o
+
+# Personal/Temporary Files
+*.swp
+*.swo
+*.swn
