@@ -9,25 +9,14 @@ import orderRouter from "./routes/orderRoute.js"
 
 //app-config
 const app = express()
-const port = 10000
+const port = 4000
 
 //middleware
 app.use(express.json())
-app.use(cors({
-    origin: 'https://food-delivery-frontend-qiwm.onrender.com'
-  }));
+app.use(cors())
 
 //DB connection
 connectDB();
-
-// Set CSP header middleware
-app.use((req, res, next) => {
-    res.setHeader(
-      'Content-Security-Policy',
-      "script-src 'self' 'unsafe-inline' conoret.com;"
-    );
-    next();
-  });
 
 //api endpoint
 app.use("/api/food", foodRouter)
