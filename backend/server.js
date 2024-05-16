@@ -13,7 +13,9 @@ const port = 10000
 
 //middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin: 'https://food-delivery-frontend-qiwm.onrender.com'
+  }));
 
 //DB connection
 connectDB();
