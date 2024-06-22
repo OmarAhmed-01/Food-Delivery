@@ -41,8 +41,6 @@ const PlaceOrder = () => {
       amount: cartTotalAmount() + 2,
     }
     let response = await axios.post(url + "/api/order/place", order_data, {headers: {token}})
-    console.log(response.data);
-    console.log(data);
     if (response.data.success) {
       const { session_url } = response.data;
       window.location.replace(session_url);
