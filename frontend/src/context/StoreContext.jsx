@@ -5,7 +5,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItem, setCartItems] = useState({});
-  const url = 'http://localhost:4000';
+  const url = 'https://deliveroo-backend-upf5.onrender.com';
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
 
